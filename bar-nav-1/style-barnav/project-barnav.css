@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --backgrou-da-barnav: linear-gradient(75deg, rgb(7, 7, 7) 38%, rgb(18, 18, 18) 45%, rgb(35, 37, 39) 88%);
+    --background-barnav-hover: rgb(177, 226, 238);
+    --font-family-opt-nav: 'Times New Roman', Times, serif;
+    --font-size-padrao-opt-nav: 16px;
+    --color-primaria-w: white;
+    --color-primaria-b: black;
+
+}
+
+body {
+    width: 100%;
+    display: flex;
+    min-width: 350px;
+}
+
+/* inicio da estilização do header*/
+.header-main {
+    width: 100%;
+}
+
+/* estilização da mensagem do header*/
+.mensagem-bv {
+    display: block;
+    background:rgb(202, 200, 200);
+    border-bottom: solid 1px black;
+}
+
+#p-mensagem-bv {
+    color: var(--color-primaria-w);
+    text-align: center;
+    padding: 2px;
+    font-size: var(--font-size-padrao-opt-nav);
+    font-family: var(--font-family-opt-nav);
+    font-weight: 800;
+    color: var(--color-primaria-b);
+}
+
+/* estilização da barra de navegação principal*/
+.bar-nav-main {
+    background: var(--backgrou-da-barnav);
+    display: flex;
+    width: 100%;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+/* stily logo*/
+.logo-marca {
+    color: var(--color-primaria-w);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img-logo-main {
+    border-radius: 50px;
+    margin-left: 15px;
+    width: 45px;
+    height: 45px;
+}
+
+#h3-logo-marca {
+    padding-left: 10px;
+}
+
+/* stily option */
+.bar-menu {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 25px;
+}
+
+.a-option-menu {
+    color: var(--color-primaria-w);
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: none;
+}
+
+.a-option-menu:hover {
+    background: var(--background-barnav-hover);
+    color: var(--color-primaria-b);
+    letter-spacing: 1px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+/* stily dropdown*/
+#a-dropbtn {
+    color: var(--color-primaria-w);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdow {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-dropdown {
+    margin: 10px;
+    display: none;
+    position: absolute;
+    background: var(--backgrou-da-barnav);
+    min-width: 130px;
+    box-shadow: rgb(158, 158, 161) 1px 1px 1px;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.btn-dropdown .a-option-sub-menu {
+    text-align: center;
+    color: var(--color-primaria-w);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* dropdown links on hover */
+.btn-dropdown .a-option-sub-menu {
+    background-color: var(--backgrou-da-barnav);
+    border-radius: 10px;
+}
+/* dropdown menu hover */
+.dropdown:hover .btn-dropdown {
+    display: block;
+
+}
+
+.dropdown:hover #a-dropbtn {
+    background-color: var(--background-barnav-hover);
+    border-radius: 15px;
+}
+.a-option-sub-menu:hover {
+    background-color: var(--background-barnav-hover);
+    transition: 1s;
+}
